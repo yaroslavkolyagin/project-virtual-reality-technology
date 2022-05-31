@@ -5,11 +5,15 @@ html
 	color: $clr-white;
 	@media (max-width: $media-1024)
 	{
-		font-size: $rem * 12;
+		font-size: 12px;
 	}
 	@media (max-width: $media-768)
 	{
-		font-size: $rem * 16;
+		font-size: 16px;
+	}
+	@media (max-width: $media-480)
+	{
+		font-size: 12px;
 	}
 }
 .wrap
