@@ -1,6 +1,6 @@
 .layout-2
 {
-	background-color: #17324D;
+	background-color: $clr-theme;
 	padding: $rem * 100 0 $rem * 30;
 	@media (max-width: $media-768)
 	{
