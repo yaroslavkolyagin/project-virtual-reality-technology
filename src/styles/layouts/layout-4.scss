@@ -13,9 +13,10 @@
 	&__title
 	{
 		max-width: $rem * 1100;
-		margin-bottom: $rem * 50;
+		margin-bottom: $rem * 70;
 		@media (max-width: $media-768)
 		{
+			margin-bottom: $rem * 50;
 			text-align: center;
 		}
 	}

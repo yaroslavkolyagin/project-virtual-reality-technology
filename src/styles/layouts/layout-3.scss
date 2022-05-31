@@ -49,7 +49,7 @@
 			{
 				color: rgba(255,255,255,1);
 			}
-			&:before
+			&-icon
 			{
 				content: '';
 				position: absolute;
@@ -70,11 +70,29 @@
 					left: 0;
 					margin: auto;
 				}
-				@media (max-width: $media-480)
-				{
-
-				}
 			}
+			// &:before
+			// {
+			// 	content: '';
+			// 	position: absolute;
+			// 	top: $rem * -25;
+			// 	left: $rem * 50;
+			// 	width: $rem * 60;
+			// 	height: $rem * 60;
+			// 	background-image: url('../img/sprite.svg#i-star');
+			// 	background-size: contain;
+			// 	background-position: center;
+			// 	background-repeat: no-repeat;
+			// 	@media (max-width: $media-768)
+			// 	{
+			// 		width: $rem * 40;
+			// 		height: $rem * 40;
+			// 		top: $rem * -15;
+			// 		right: 0;
+			// 		left: 0;
+			// 		margin: auto;
+			// 	}
+			// }
 		}
 	}
 	&__info

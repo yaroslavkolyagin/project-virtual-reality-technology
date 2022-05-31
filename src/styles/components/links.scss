@@ -1,0 +1,10 @@
+.link
+{
+	color: $clr-accent;
+	opacity: .5;
+	transition: $t;
+	&:hover
+	{
+		opacity: 1;
+	}
+}
