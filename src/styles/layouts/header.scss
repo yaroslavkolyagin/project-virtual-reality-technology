@@ -1,0 +1,49 @@
+.header
+{
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-bottom: $rem * 30;
+	@media (max-width: $media-768)
+	{
+		margin-bottom: $rem * 90;
+	}
+	@media (max-width: $media-480)
+	{
+		margin-bottom: $rem * 45;
+	}
+	&__logo
+	{
+		font-size: $rem * 18;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: $rem * 10;
+		@media (max-width: $media-480)
+		{
+			font-size: $rem * 15;
+		}
+	}
+	&__nav
+	{
+		&-list
+		{
+			display: flex;
+			&-item
+			{
+				margin: 0 $rem * 10;
+				&-link
+				{
+					font-size: $rem * 14;
+					text-transform: uppercase;
+					color: $clr-white;
+					opacity: .6;
+					transition: $t;
+					&:hover
+					{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

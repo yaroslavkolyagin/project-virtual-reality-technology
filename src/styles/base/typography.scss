@@ -1,0 +1,58 @@
+.title-1
+{
+	font-size: $rem * 100;
+	line-height: $rem * 100;
+	&__bold
+	{
+		font-family: $font-main-bold;
+	}
+	&__no-break
+	{
+		white-space: nowrap;
+	}
+	@media (max-width: $media-768)
+	{
+		font-size: $rem * 80;
+		line-height: $rem * 80;
+	}
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 50;
+		line-height: $rem * 50;
+	}
+}
+.title-2
+{
+	font-size: $rem * 70;
+	line-height: $rem * 70;
+	@media (max-width: $media-768)
+	{
+		font-size: $rem * 60;
+		line-height: $rem * 60;
+	}
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 40;
+		line-height: $rem * 40;
+	}
+}
+.title-3
+{
+	font-size: $rem * 50;
+	line-height: $rem * 50;
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 40;
+		line-height: $rem * 40;
+	}
+}
+.title-4
+{
+	font-size: $rem * 30;
+	line-height: $rem * 30;
+	@media (max-width: $media-480)
+	{
+		font-size: $rem * 25;
+		line-height: $rem * 25;
+	}
+}
