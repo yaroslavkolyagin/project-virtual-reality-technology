@@ -1,0 +1,136 @@
+.layout-3
+{
+	background-color: #17324D;
+	background-image: url('../img/31.png');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	padding: $rem * 100 0 $rem * 130;
+	@media (max-width: $media-768)
+	{
+		padding: $rem * 60 0 $rem * 90;
+	}
+	&__list
+	{
+		display: flex;
+		margin: 0 -5px $rem * 140 0;
+		@media (max-width: $media-768)
+		{
+			flex-flow: column;
+			margin: 0 0 $rem * 50 0;
+		}
+		&-item
+		{
+			position: relative;
+			margin: 0 5px;
+			min-width: calc(100% / 3);
+			width: calc(100% / 3);
+			background-color: #119AA3;
+			padding: $rem * 50 $rem * 70 $rem * 125 $rem * 50;
+			box-sizing: border-box;
+			border-radius: $rem * 30;
+			font-size: $rem * 25;
+			line-height: $rem * 27;
+			color: rgba(255,255,255,.5);
+			@media (max-width: $media-768)
+			{
+				margin: 0 0 $rem * 40 0;
+				width: 100%;
+				padding: $rem * 40;
+				font-size: $rem * 21;
+				line-height: $rem * 23;
+				text-align: center;
+			}
+			@media (max-width: $media-480)
+			{
+				padding: $rem * 40 $rem * 20;
+			}
+			span
+			{
+				color: rgba(255,255,255,1);
+			}
+			&:before
+			{
+				content: '';
+				position: absolute;
+				top: $rem * -25;
+				left: $rem * 50;
+				width: $rem * 60;
+				height: $rem * 60;
+				background-image: url('../img/sprite.svg#i-star');
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+				@media (max-width: $media-768)
+				{
+					width: $rem * 40;
+					height: $rem * 40;
+					top: $rem * -15;
+					right: 0;
+					left: 0;
+					margin: auto;
+				}
+				@media (max-width: $media-480)
+				{
+
+				}
+			}
+		}
+	}
+	&__info
+	{
+		position: relative;
+		display: flex;
+		padding-top: $rem * 40;
+		@media (max-width: $media-768)
+		{
+			flex-flow: column;
+		}
+		&:before
+		{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: $rem * 115;
+			height: $rem * 2;
+			background-color: $clr-white;
+		}
+		&-main
+		{
+			width: 60%;
+			padding-right: 5%;
+			box-sizing: border-box;
+			font-size: $rem * 30;
+			line-height: $rem * 36;
+			@media (max-width: $media-768)
+			{
+				width: 100%;
+				padding-right: 0;
+				font-size: $rem * 20;
+				line-height: $rem * 24;
+				margin-bottom: $rem * 25;
+			}
+		}
+		&-note
+		{
+			width: 40%;
+			@media (max-width: $media-768)
+			{
+				width: 70%;
+			}
+			@media (max-width: $media-480)
+			{
+				width: 100%;
+			}
+			&-item
+			{
+				margin-bottom: $rem * 20;
+				&:last-child
+				{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

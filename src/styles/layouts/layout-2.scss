@@ -1,0 +1,24 @@
+.layout-2
+{
+	background-color: #17324D;
+	padding: $rem * 100 0 $rem * 30;
+	@media (max-width: $media-768)
+	{
+		padding: $rem * 30 0 $rem * 30;
+	}
+	&__list
+	{
+		&-item
+		{
+			margin-bottom: $rem * 150;
+			@media (max-width: $media-768)
+			{
+				margin-bottom: $rem * 60;
+			}
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+		}
+	}
+}
