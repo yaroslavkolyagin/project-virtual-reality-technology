@@ -47,7 +47,11 @@
 			}
 			span
 			{
-				color: rgba(255,255,255,1);
+				color: rgba(255,255,255,.5);
+				span
+				{
+					color: rgba(255,255,255,1);
+				}
 			}
 			&-icon
 			{
@@ -121,6 +125,7 @@
 			box-sizing: border-box;
 			font-size: $rem * 30;
 			line-height: $rem * 36;
+
 			@media (max-width: $media-768)
 			{
 				width: 100%;
@@ -133,6 +138,8 @@
 		&-note
 		{
 			width: 40%;
+			font-size: $rem * 20;
+			line-height: $rem * 24;
 			@media (max-width: $media-768)
 			{
 				width: 70%;
@@ -140,6 +147,8 @@
 			@media (max-width: $media-480)
 			{
 				width: 100%;
+				font-size: $rem * 17;
+				line-height: $rem * 20;
 			}
 			&-item
 			{
